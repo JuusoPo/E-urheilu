@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-urheilu Visailu</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h1>E-urheilu Visailu</h1>
+    <div id="game-container">
+        <div id="start-screen">
+            <p>Testaa e-urheilu tietämyksesi!</p>
+            <button onclick="startGame()">Aloita peli</button>
+        </div>
+        
+        <div id="question-screen" style="display: none;">
+            <p id="question-text"></p>
+            <div id="options-container"></div>
+            <button onclick="nextQuestion()" id="next-btn" disabled>Seuraava kysymys</button>
+        </div>
+        
+        <div id="result-screen" style="display: none;">
+            <p id="result-text"></p>
+            <button onclick="resetGame()">Pelaa uudestaan</button>
+        </div>
+    </div>
+    
+    <script src="./js/functions.js"></script>
+</body>
+</html>
